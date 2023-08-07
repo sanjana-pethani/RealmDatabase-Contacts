@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A6AE9A52A7CC4040003DA07 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6AE9A42A7CC4040003DA07 /* Realm */; };
+		7A6AE9A72A7CC4040003DA07 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6AE9A62A7CC4040003DA07 /* RealmSwift */; };
+		7A6AE9A92A7CC4480003DA07 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6AE9A82A7CC4480003DA07 /* DataBase.swift */; };
 		7AF5B80B2A7B63EC0045663A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF5B80A2A7B63EC0045663A /* AppDelegate.swift */; };
 		7AF5B80D2A7B63EC0045663A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF5B80C2A7B63EC0045663A /* SceneDelegate.swift */; };
 		7AF5B80F2A7B63EC0045663A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF5B80E2A7B63EC0045663A /* ViewController.swift */; };
 		7AF5B8122A7B63EC0045663A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF5B8102A7B63EC0045663A /* Main.storyboard */; };
 		7AF5B8142A7B63EE0045663A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF5B8132A7B63EE0045663A /* Assets.xcassets */; };
 		7AF5B8172A7B63EE0045663A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF5B8152A7B63EE0045663A /* LaunchScreen.storyboard */; };
+		7AF5B81F2A7B66060045663A /* Contacts Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF5B81E2A7B66060045663A /* Contacts Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A6AE9A82A7CC4480003DA07 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		7AF5B8072A7B63EC0045663A /* RealmDatabase Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RealmDatabase Contacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF5B80A2A7B63EC0045663A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AF5B80C2A7B63EC0045663A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		7AF5B8132A7B63EE0045663A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AF5B8162A7B63EE0045663A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AF5B8182A7B63EE0045663A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AF5B81E2A7B66060045663A /* Contacts Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contacts Model.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6AE9A72A7CC4040003DA07 /* RealmSwift in Frameworks */,
+				7A6AE9A52A7CC4040003DA07 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +66,9 @@
 			children = (
 				7AF5B80A2A7B63EC0045663A /* AppDelegate.swift */,
 				7AF5B80C2A7B63EC0045663A /* SceneDelegate.swift */,
+				7AF5B81E2A7B66060045663A /* Contacts Model.swift */,
 				7AF5B80E2A7B63EC0045663A /* ViewController.swift */,
+				7A6AE9A82A7CC4480003DA07 /* DataBase.swift */,
 				7AF5B8102A7B63EC0045663A /* Main.storyboard */,
 				7AF5B8132A7B63EE0045663A /* Assets.xcassets */,
 				7AF5B8152A7B63EE0045663A /* LaunchScreen.storyboard */,
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = "RealmDatabase Contacts";
+			packageProductDependencies = (
+				7A6AE9A42A7CC4040003DA07 /* Realm */,
+				7A6AE9A62A7CC4040003DA07 /* RealmSwift */,
+			);
 			productName = "RealmDatabase Contacts";
 			productReference = 7AF5B8072A7B63EC0045663A /* RealmDatabase Contacts.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 7AF5B7FE2A7B63EC0045663A;
+			packageReferences = (
+				7A6AE9A32A7CC4040003DA07 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 7AF5B8082A7B63EC0045663A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6AE9A92A7CC4480003DA07 /* DataBase.swift in Sources */,
 				7AF5B80F2A7B63EC0045663A /* ViewController.swift in Sources */,
 				7AF5B80B2A7B63EC0045663A /* AppDelegate.swift in Sources */,
 				7AF5B80D2A7B63EC0045663A /* SceneDelegate.swift in Sources */,
+				7AF5B81F2A7B66060045663A /* Contacts Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +375,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A6AE9A32A7CC4040003DA07 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A6AE9A42A7CC4040003DA07 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A6AE9A32A7CC4040003DA07 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7A6AE9A62A7CC4040003DA07 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A6AE9A32A7CC4040003DA07 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7AF5B7FF2A7B63EC0045663A /* Project object */;
 }
